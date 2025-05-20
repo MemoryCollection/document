@@ -1,3 +1,10 @@
+# AutoJs6 使用文档
+
+原作者：https://github.com/SuperMonster003/AutoJs6-Documentation
+
+
+
+## 常用函数
 
 ### 随机休息
 
@@ -135,19 +142,27 @@ if (clickRandom(editText, limit, customPadding)) {
 
 #### text：筛选包含指定文本的控件。
 
+~~~JavaScript
 text("立即开始");
+~~~
 
 #### desc：根据控件的内容描述进行筛选。
 
+~~~JavaScript
 desc("这是一个描述");
+~~~
 
 #### id：根据控件的 ID 进行筛选。
 
+~~~JavaScript
 id("com.example:id/button");
+~~~
 
 #### className：根据控件的类名进行筛选。
 
+~~~JavaScript
 className("android.widget.Button");
+~~~
 
 ### 查找控件（单个）
 
@@ -194,7 +209,7 @@ if (control) {
         console.log("控件向后滚动失败");
     }
 }
-// 控件向下股东
+// 控件向下滚动
 let control = scrollable(true).findOne(800)
 if (control) {
     if (control.scrollForward()) {
